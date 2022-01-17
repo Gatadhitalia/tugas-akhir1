@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cafe Scoff</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+              var propertiPeta = {
+                center:new google.maps.LatLng(-7.146270357030199,110.40880216814907),
+                zoom:9,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+              };
+              
+              var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+              
+              // membuat Marker
+              var marker=new google.maps.Marker({
+                  position: new google.maps.LatLng(-7.146270357030199,110.40880216814907),
+                  map: peta,
+                  animation: google.maps.Animation.BOUNCE
+              });
+            
+            }
+            
+            // event jendela di-load  
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </head>
+    <body>
+        <!-- html -->
+        <div class="menu">
+            <div class="logo_content">
+                <div class="logo">
+                    <!--nama navbar (menu)-->
+                    <i class='bx bx-heart-circle' ></i>
+                    <div class="logo_name">Hello Scoff's</div>
+                </div>
+                <!--logo navbar (menu)-->
+                <i class='bx bx-menu' id='btn'></i>
+            </div>
+
+             <!-- navbar search-->
+            <div class="src">
+                <i class='bx bx-search' ></i>
+                <input type="text1" placeholder="Search..">
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="#home">
+                        <!--navbar home-->
+                        <i class='bx bxs-home-heart'></i>
+                        <span class="link_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="#about">
+                        <!--navbar about cafe-->
+                        <i class='bx bxs-store'></i>
+                        <span class="link_name">About</span>
+                    </a>
+                    <span class="tooltip">About</span>
+                </li>
+                <li>
+                    <a href="#makanan">
+                        <!--navbar food&drink-->
+                        <i class='bx bxs-food-menu' ></i>
+                        <span class="link_name">Food & Drink</span>
+                    </a>
+                    <span class="tooltip">Food & Drink</span>
+                </li>
+                <li>
+                    <a href="#buku_tamu">
+                        <!--navbar buku tamu-->
+                        <i class='bx bxs-book-open'></i>
+                        <span class="link_name">Buku Tamu</span>
+                    </a>
+                    <span class="tooltip">Buku Tamu</span>
+                </li>
+                <li>
+                    <a href="#reservasi">
+                        <!--navbar form reservasi-->
+                        <i class='bx bxs-calendar'></i>
+                        <span class="link_name">Reservasi</span>
+                    </a>
+                    <span class="tooltip">Reservasi</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="home" id="home">
+
+            <!-- Content Home -->
+            <div class="judul">Home</div>
+            <img src="2.jpeg" width="1180px" height="auto"><br><br><br><br>
+            <div class="isi">
+                <section id="gambar">
+                    <img src="5.jpeg">
+                </section>
+                <div class="kolom">
+                    <p class="deskripsi"> Enjoyy your coffe</p>
+                    <h1>Scoff Cafe</h1>
+                    <p>Nikmati Coffemu dengan minum di Scoff Cafe</p>
+                    <p>Ingin tahu tentang cafe??</p><br>
+                    <p><a href="#about" class="btn-lengkap" >Lihat Selengkapnya</a></p>
+                </div>
+            </div><br><br><br>
+            <div class="food">
+                <div class="tbl-food">
+                    <img src="25.jpeg">
+                    <h2>Rodeo Cake</h2>
+                    <p>Rp 32.000</p>
+                </div>
+                <div class="tbl-food">
+                    <img src="c.jpeg">
+                    <h2>Cozy coffe</h2>
+                    <p>Rp 28.000</p>
+                </div>
+                <div class="tbl-food">
+                    <img src="23.jpeg">
+                    <h2>smolly Cake</h2>
+                    <p>Rp 32.000</p>
+                </div>
+            </div>
+            <p class="lanjut">Yuk lihat menu lebih lanjutt ---><a href="#makanan" class="btn-lengkap" >Lihat Selengkapnya</a></p>
+            <br><br><br>
+            <div class="gambar">
+                <img src="7.jpeg" height="420px">
+                <img src="8.jpeg" height="420px">
+                <img src="9.jpeg" height="420px">
+                <img src="10.jpeg" height="420px">
+            </div><br><br>
+
+            <!-- Content about -->
+            <div class="judul" id="about">About</div><br>
+            <div class="about1">
+                <div class="about">
+                    <h1 class="medsos">Media Sosial</h1>
+                    <!-- button medsos -->
+                    <div class="medsos-btn">
+                        <div class="li2">
+                            <a href="https://t.me/gatadhitalia">
+                                <!--Telegram -->
+                                <i class='bx bxl-telegram'></i>
+                            </a>
+                        </div>
+                        <div class="li2">
+                            <a href="111202113439@mhs.dinus.ac.id">
+                                <!--gmail -->
+                                <i class='bx bxl-gmail'></i>
+                            </a>
+                        </div>
+                        <div class="li2">
+                            <a href="https://www.instagram.com/gatadhitalia">
+                                <!--instagram -->
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </div>
+                        <div class="li2">
+                            <a href="https://mobile.twitter.com/">
+                                <!-- twitter-->
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </div>
+                        <div class="li2">
+                            <a href="https://youtube.com/channel/UCwusXVmslAh4q5QzQid8-Vw">
+                                <!-- Youtube-->
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><br><br><br>
+                <div id="googleMap" style="width:70%;height:380px;border-radius: 20px; margin-left: 200px;"></div>
+                <form action="" method="post">
+                    <input type="hidden" id="lat" name="lat" value="">
+                    <input type="hidden" id="lng" name="lng" value="">
+                </form>
+            </div><br><br>
+            
+
+            <!-- Content Daftar menu makanan -->
+            <div class="judul" id="makanan">Daftar Menu</div><br>
+            <div class="makanan">
+                <h1><u>Drink</u></h1>
+                <div class="thumbnail">
+                    <img src="c.jpeg">
+                    <h2>Cozy coffe</h2>
+                    <p>Rp 28.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="35.jpeg">
+                    <h2>Greentea boba</h2>
+                    <p>Rp 25.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="31.jpeg">
+                    <h2>Orange Fresh</h2>
+                    <p>Rp 30.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="36.jpeg">
+                    <h2>Sweet velvet</h2>
+                    <p>Rp 28.000</p>
+                </div>
+                <br><br>
+                <div class="thumbnail">
+                    <img src="37.jpeg">
+                    <h2>Aquaria Glace</h2>
+                    <p>Rp 32.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="b.jpeg">
+                    <h2>Lozy coffe</h2>
+                    <p>Rp 30.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="39.jpeg">
+                    <h2>Greentea frappe</h2>
+                    <p>Rp 250.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="40.jpeg">
+                    <h2>Chocolate Boba</h2>
+                    <p>Rp 250.000</p>
+                </div>
+            </div><br><br>
+            <div class="makanan">
+                <h1><u>Food</u></h1>
+                <div class="thumbnail">
+                    <img src="a.jpeg">
+                    <h2>Smosh Cake</h2>
+                    <p>Rp 35.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="25.jpeg">
+                    <h2>Rodeo Cake</h2>
+                    <p>Rp 32.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="24.jpeg">
+                    <h2>Bery Cake</h2>
+                    <p>Rp 38.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="23.jpeg">
+                    <h2>smolly Cake</h2>
+                    <p>Rp 32.000</p>
+                </div>
+                <br><br>
+                <div class="thumbnail">
+                    <img src="27.jpeg">
+                    <h2>Rainbow Cake</h2>
+                    <p>Rp 35.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="28.jpeg">
+                    <h2>Loly Cake</h2>
+                    <p>Rp 30.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="21.jpeg">
+                    <h2>Biscobear</h2>
+                    <p>Rp 30.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="22.jpeg">
+                    <h2>Biscotus</h2>
+                    <p>Rp 38.000</p>
+                </div>
+                <br><br>
+                <div class="thumbnail">
+                    <img src="26.jpeg">
+                    <h2>Biscoreen</h2>
+                    <p>Rp 28.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="30.jpeg">
+                    <h2>Biscof</h2>
+                    <p>Rp 32.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="29.jpeg">
+                    <h2>Bronlt</h2>
+                    <p>Rp 30.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="34.jpeg">
+                    <h2>Mozy Cake</h2>
+                    <p>Rp 25.000</p>
+                </div>
+            </div><br><br>
+
+
+            <!-- Content Buku Tamu -->
+            <div class="judul" id="buku_tamu">Buku Tamu</div><br>
+            <div class="bg_buku">
+                <div class="buku_tamu">
+                    <p> Silahkan Klik Tombol Dibawah ini untuk mengisi form buku tamu </p><br>
+                    <p><a href="buku_tamu.php" class="btn-lengkap" >Buku Tamu</a></p>
+                </div>
+            </div><br><br>
+            
+
+            <!-- Content Form reservasi -->
+            <div class="judul" id="reservasi">Reservasi</div><br>
+            <div class="reservasi">
+                <h2>FORM RESERVASI</h2>
+                <P class="lengkapi">(Lengkapi Data Dibawah ini)</P><br><br>
+                <form action="#" method="POST" onsubmit="validasi()">
+                    <div>
+                        <label>Nama Lengkap</label>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>No Telepon</label>
+                        <input type="number" name="tlp" id="tlp">
+                    </div>
+                    <div>
+                        <label>Tanggal Pemesanan</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label>Alamat Tinggal </label>
+                        <textarea cols="20" rows="2" name="alamat" id="alamat"></textarea>
+                    </div>
+                    <div>
+                        <label>Pesan</label>
+                        <textarea cols="40" rows="5" name="pesan" id="pesan"></textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <input type="submit" class="tombol">
+                    </div>
+                </form>
+            </div><br><br><br>
+    
+
+
+            <!-- Jam dan tanggal -->
+            <h2>===> Tanggal dan Jam Digital <===</h2><br>
+            <div class="jam_digital">
+                <div class="kotak">
+                    <p id="jam"></p>
+                </div>
+                
+                <div class="kotak">
+                    <p id="menit"></p>
+                </div>
+                
+                <div class="kotak">
+                    <p id="detik"></p>
+                </div>
+            </div><br>
+            <h4 id="tanggal"></h4>
+
+            
+            <!-- Copyright -->
+            <footer>Copyright @ 2022 Gata Anindhita Zalianingrum</footer>
+
+            
+        </div>
+        
+
+        <!-- Javascript -->
+        <!-- Menu JS -->
+        <script type="text/javascript">
+            let btn = document.querySelector('#btn');
+            let srcBtn = document.querySelector('.bx-search');
+
+            btn.onclick = function(){
+                menu.classList.toggle('active');
+            }
+            srcBtn.onclick = function(){
+                menu.classList.toggle('active');
+            }
+        </script>
+        <script type="text/javascript">
+            var tombolMenu = document.getElementsByClassName('tombol-menu')[0];
+            var menu = document.getElementsByClassName('menu')[0];
+
+            tombolMenu.onclick = function() {
+                menu.classList.toggle('active');
+            }
+
+            menu.onclick = function() {
+                menu.classList.toggle('active');
+            }
+        </script>
+        <!-- Reservasi JS -->
+        <script type="text/Javascript">
+            window.setTimeout("waktu()", 1000);
+            function waktu() {
+                var waktu = new Date();
+                setTimeout("waktu()", 1000);
+                document.getElementById("jam").innerHTML = waktu.getHours();
+                document.getElementById("menit").innerHTML = waktu.getMinutes();
+                document.getElementById("detik").innerHTML = waktu.getSeconds();
+            }
+
+            var hari = new Date();
+            document.getElementById("tanggal").innerHTML = "Waktu akses  : <br> "+hari;
+
+            //mengubah warna css per detik
+            var i=0;
+            function change() {
+                var classJamDigital = document.getElementsByClassName
+                ("jam_digital");
+                var color =["#b19f669c", "GoldenRod", "PapayaWhip", "#b69d4a4b", "#a07636d5"];
+                
+                classJamDigital[0].style.backgroundColor = color[i];
+                i=(i+1)%color.length;
+            }
+            setInterval(change, 1000);
+        </script>
+
+    </body>
+</html>
